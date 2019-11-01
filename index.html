@@ -33,6 +33,20 @@
 </head>
 
 <body>
+	 <button id="custom_button" onclick="trig()">Custom Function
+    </button>
+    <script >
+        function trig(){
+            $zoho.salesiq.visitor.customaction("Trigger");
+            $zoho.salesiq.visitor.trigger(function (triggername, visitorinfo) {
+                // Your code here
+                if(triggername=="Alerter"){
+                    alert("Alerter JS API");
+                }
+            });
+            // other JSAPIs here
+        }
+    </script>
 
 	<!-- Start Header Area -->
 	<header class="header_area sticky-header">
