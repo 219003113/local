@@ -38,6 +38,7 @@
     <script >
         function trig(){
             $zoho.salesiq.visitor.customaction("Trigger");
+	}
             $zoho.salesiq.visitor.trigger(function (triggername, visitorinfo) {
                 // Your code here
                 if(triggername=="Alerter"){
@@ -45,7 +46,6 @@
                 }
             });
             // other JSAPIs here
-        }
     </script>
 
 	<!-- Start Header Area -->
