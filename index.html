@@ -45,16 +45,17 @@ mixpanel.init("e68d3278c152bdd1147064346df5f639");mixpanel.track("Video play");
         function trig(){
             $zoho.salesiq.visitor.customaction("Trigger");
 	}
-	$zoho.salesiq.ready = function (embedinfo) {
-	    $zoho.salesiq.visitor.trigger(function (triggername, visitorinfo) {
-		// Your code here
-		    if(triggername=='jsapi'){
-			    console.log("nice JSAPI");
-		    }
-	    });
-	    // other JSAPIs here
-	}
     </script>
+	<script>
+		$zoho.salesiq.ready = function (embedinfo) {
+	    		$zoho.salesiq.visitor.trigger(function (triggername, visitorinfo) {
+			// Your code here
+		   	 if(triggername=='jsapi'){
+			    console.log("nice JSAPI");
+		    	}
+	   	 });
+		}
+	</script>
 	
 	
 
