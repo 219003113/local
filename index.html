@@ -46,16 +46,6 @@ mixpanel.init("e68d3278c152bdd1147064346df5f639");mixpanel.track("Video play");
             $zoho.salesiq.visitor.customaction("Trigger");
 	}
     </script>
-	<script>
-		$zoho.salesiq.ready = function (embedinfo) {
-	    		$zoho.salesiq.visitor.trigger(function (triggername, visitorinfo) {
-			// Your code here
-		   	 if(triggername=='jsapi'){
-			    console.log("nice JSAPI");
-		    	}
-	   	 });
-		}
-	</script>
 	
 	
 
