@@ -46,6 +46,18 @@ mixpanel.init("e68d3278c152bdd1147064346df5f639");mixpanel.track("Video play");
             $zoho.salesiq.visitor.customaction("Trigger");
 	}
     </script>
+	<script>
+		$zoho.salesiq.customfield.add( 
+		{ 
+		   "name" :"Company", 
+		   "hint" :"Company for salesforce", 
+		   "required" :"false>", 
+		   "maxlength" :"100", 
+		   "minlength" :"2",
+		   "type" :"textarea", 
+		   "visibility" :"both"
+		});
+	</script>
 	
 	
 
