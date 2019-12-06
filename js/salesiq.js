@@ -8,7 +8,10 @@ $zoho.salesiq.ready = function (embedinfo) {
 		    	}
 	   	 });
 		}
-$zoho.salesiq.customfield.add( 
+$zoho.salesiq.ready = function()
+
+{
+	$zoho.salesiq.customfield.add( 
 		{ 
 		   "name" :"Company", 
 		   "hint" :"Company for salesforce", 
@@ -18,3 +21,4 @@ $zoho.salesiq.customfield.add(
 		   "type" :"textarea", 
 		   "visibility" :"both"
 		});
+}
