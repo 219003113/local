@@ -8,3 +8,13 @@ $zoho.salesiq.ready = function (embedinfo) {
 		    	}
 	   	 });
 		}
+$zoho.salesiq.customfield.add( 
+		{ 
+		   "name" :"Company", 
+		   "hint" :"Company for salesforce", 
+		   "required" :"false>", 
+		   "maxlength" :"100", 
+		   "minlength" :"2",
+		   "type" :"textarea", 
+		   "visibility" :"both"
+		});
