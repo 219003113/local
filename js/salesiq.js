@@ -15,7 +15,7 @@ $zoho.salesiq.ready = function()
 		{ 
 		   "name" :"Company", 
 		   "hint" :"Company for salesforce", 
-		   "required" :"false>", 
+		   "required" :"false", 
 		   "maxlength" :"100", 
 		   "minlength" :"2",
 		   "type" :"textarea", 
